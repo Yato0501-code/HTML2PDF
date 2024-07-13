@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 2 PDF converter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" media="screen" />
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura-dark.css"
+        media="screen and (prefers-color-scheme: dark)" />
+</head>
+
+<body>
+    <h1 style="text-align: center;">HTML to PDF</h1>
+    <p style="text-align: center;">Upload the file here.</p>
+    <form id="htmlForm" style="text-align: center;">
+        <input type="file" id="htmlFile" name="htmlFile" accept=".html">
+        <button type="submit">Convert to PDF</button>
+    </form>
+    <div id="divForPreview" style="display: none;"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
